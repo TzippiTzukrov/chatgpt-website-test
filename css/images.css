@@ -1,5 +1,6 @@
 header {
   position: relative;
+  margin: 10px;
 }
 
 #logo {
@@ -24,7 +25,7 @@ header {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-family: Arial, sans-serif;
+  font-family: 'Ubuntu', Arial, sans-serif;
 }
 
 #user-actions {
@@ -77,12 +78,147 @@ header {
   text-decoration: none;
   color: #000000;
   font-size: 1em;
-  font-family: Arial, sans-serif;
+  font-family: inherit;
 }
 
 #main-nav ul li a {
   text-decoration: none;
   color: #222222;
   font-size: 1em;
+  font-family: inherit;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
   font-family: Arial, sans-serif;
+  background:
+    linear-gradient(to bottom, rgba(255,255,255,0) 0%, #ffffff 65%),
+    linear-gradient(to right, #ecc9f7, #fde3d3);
+  background-repeat: no-repeat;
+}
+
+main {
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+
+main h1 {
+  font-size: 1.9em;
+  font-weight: normal;
+  color: #222;
+  margin: 0 0 35px 0;
+}
+
+.gallery-section {
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.section-head {
+  position: static;
+  margin: 0 0 20px 0;
+  overflow: hidden;
+}
+
+.section-head h2 {
+  float: left;
+  margin: 0;
+  font-size: 1.05em;
+  font-weight: normal;
+  color: #222;
+  line-height: 36px;
+}
+
+.arrows {
+  float: right;
+}
+
+.arrow-btn {
+  width: 32px;
+  height: 32px;
+  margin-left: 8px;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.arrow-btn:first-child {
+  color: #bbb;
+  background-color: #f3f3f3;
+}
+
+.styles-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.style-card {
+  float: left;
+  width: 15%;
+  margin-right: 2%;
+  text-align: center;
+}
+
+.style-card:last-child {
+  margin-right: 0;
+}
+
+.style-card figure {
+  margin: 0;
+}
+
+.style-card img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.style-card figcaption {
+  margin-top: 10px;
+  font-size: 0.8em;
+  color: #888;
+}
+
+.discover-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
+
+.discover-item {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+}
+
+.discover-item a {
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.discover-item img {
+  float: left;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.discover-item span {
+  display: block;
+  margin-left: 62px;
+  line-height: 48px;
+  font-size: 0.95em;
+  color: #777;
+  white-space: nowrap;
 }

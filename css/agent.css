@@ -1,5 +1,6 @@
 header {
   position: relative;
+  margin: 10px;
 }
 
 #logo {
@@ -24,7 +25,7 @@ header {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-family: Arial, sans-serif;
+  font-family: 'Ubuntu', Arial, sans-serif;
 }
 
 #user-actions {
@@ -77,12 +78,120 @@ header {
   text-decoration: none;
   color: #000000;
   font-size: 1em;
-  font-family: Arial, sans-serif;
+  font-family: inherit;
 }
 
 #main-nav ul li a {
   text-decoration: none;
   color: #222222;
   font-size: 1em;
+  font-family: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+main {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+}
+
+#agent-text {
+  float: left;
+  width: 45%;
+  padding-top: 40px;
+}
+
+#agent-text h1 {
+  font-size: 3.2em;
+  font-weight: bold;
+  color: #000000;
+  margin: 0 0 25px 0;
+  line-height: 1.1;
+  font-family: Arial, sans-serif;
+}
+
+#agent-text .description {
+  font-size: 1.1em;
+  color: #333333;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  max-width: 420px;
+}
+
+#agent-text .availability {
+  font-size: 0.95em;
+  color: #555555;
+  margin: 0 0 30px 0;
+}
+
+#try-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 28px;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+#agent-visual {
+  float: right;
+  width: 48%;
+  position: relative;
+}
+
+#agent-visual {
+  height: 580px;
+  background: linear-gradient(135deg, #a8d8ff 0%, #6eb5ff 40%, #4a9eff 70%, #3a8eef 100%);
+  border-radius: 20px;
+  position: relative;
+}
+
+.info-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px 24px;
+  width: 80%;
+  max-width: 340px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.info-box h2 {
+  font-size: 1em;
+  font-weight: normal;
+  color: #333333;
+  margin: 0 0 12px 0;
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.info-box .bulb-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.info-box p {
+  font-size: 0.95em;
+  color: #444444;
+  line-height: 1.45;
+  margin: 0;
   font-family: Arial, sans-serif;
 }

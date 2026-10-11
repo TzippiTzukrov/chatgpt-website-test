@@ -1,5 +1,6 @@
 header {
   position: relative;
+  margin: 10px;
 }
 
 #logo {
@@ -24,7 +25,7 @@ header {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-family: Arial, sans-serif;
+  font-family: 'Ubuntu', Arial, sans-serif;
 }
 
 #user-actions {
@@ -77,14 +78,14 @@ header {
   text-decoration: none;
   color: #000000;
   font-size: 1em;
-  font-family: Arial, sans-serif;
+  font-family: inherit;
 }
 
 #main-nav ul li a {
   text-decoration: none;
   color: #222222;
   font-size: 1em;
-  font-family: Arial, sans-serif;
+  font-family: inherit;
 }
 
 body {
@@ -93,44 +94,40 @@ body {
   font-family: 'Ubuntu', Arial, sans-serif;
 }
 
-/* ---------- אזור מרכזי ---------- */
 main {
   position: absolute;
   top: 46%;
   left: 50%;
-  transform: translate(-50%, -50%);   /* ממורכז באמצע הדף */
-  width: 500px;
+  transform: translate(-50%, -50%);
+  width: 700px;
   max-width: 90%;
 }
 
 main h1 {
-  margin: 0 0 30px;
+  margin: 0 0 40px;
   text-align: center;
-  font-size: 21px;
+  font-size: 30px;
   font-weight: 400;
   color: #222;
 }
 
-/* ---------- הטופס ---------- */
 .ask-form {
-  padding: 8px 8px 8px;
-  box-sizing: border-box;
+  padding: 12px 12px 12px;
   background: #fff;
   border: 1px solid #ececec;
-  border-radius: 22px;
+  border-radius: 28px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
 .ask-input {
   display: block;
   width: 100%;
-  box-sizing: border-box;
-  padding: 6px 8px 10px;
+  padding: 10px 12px 14px;
   border: none;
   outline: none;
   background: transparent;
   font-family: inherit;
-  font-size: 12px;
+  font-size: 16px;
   color: #222;
 }
 
@@ -138,30 +135,32 @@ main h1 {
   color: #9a9a9a;
 }
 
-/* ---------- הכפתורים בתוך הטופס ---------- */
 .ask-actions {
-  overflow: hidden;            /* מכיל את הכפתורים הצפים */
+  overflow: hidden;
 }
 
 .pill {
   float: left;
-  margin-right: 5px;
-  padding: 5px 9px;
+  margin-right: 7px;
+  padding: 7px 13px 7px 35px;
   background: #fff;
   border: 1px solid #e6e6e6;
-  border-radius: 15px;
+  border-radius: 20px;
   font-family: inherit;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 700;
   color: #444;
   cursor: pointer;
+  position: relative;
 }
 
 .pill img {
-  width: 12px;
-  height: 12px;
-  margin-right: 5px;
-  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  transform: translateY(-50%);
 }
 
 .pill-voice {
