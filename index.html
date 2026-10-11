@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+  <header id="top-bar">
+    <a href="index.html" id="logo">
+      <img src="img/chatgpt-icon.png" alt="ChatGPT icon">
+      <span>ChatGPT </span>
+    </a>
+
+    <div id="user-actions">
+      <button type="button" id="login-btn">Log in</button>
+      <button type="button" id="signup-btn">Sign up for free</button>
+      <button type="button" id="help-btn" aria-label="Help">?</button>
+    </div>
+
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="images.html">Images</a></li>
+        <li><a href="agent.html">Agent</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>What’s on the agenda today?</h1>
+
+    <form class="ask-form" action="#" method="post">
+      <input type="text" name="question" class="ask-input" placeholder="Ask anything">
+
+      <div class="ask-actions">
+        <button type="button" class="pill">
+          <img src="img/attach.png" alt="">Attach
+        </button>
+        <button type="button" class="pill">
+          <img src="img/search.png" alt="">Search
+        </button>
+        <button type="button" class="pill">
+          <img src="img/study.png" alt="">Study
+        </button>
+        <button type="button" class="pill">
+          <img src="img/create-image.png" alt="">Create image
+        </button>
+
+        <button type="button" class="pill pill-voice">
+          <img src="img/voice.png" alt="">Voice
+        </button>
+      </div>
+    </form>
+  </main>
+
+</body>
+</html>

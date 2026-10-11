@@ -1,0 +1,172 @@
+header {
+  position: relative;
+}
+
+#logo {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  padding:  5px 10px;
+  text-decoration: none;
+  position: relative;
+}
+
+#logo img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+#logo span {
+  font-size: 1em;
+  font-weight: bold;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: Arial, sans-serif;
+}
+
+#user-actions {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px 10px;
+}
+
+#user-actions button {
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#login-btn {
+  color: #fff;
+  padding: 5px 10px;
+  background-color: #000000;
+  border: 1px solid #000000;
+  border-radius: 15px;
+}
+
+#signup-btn {
+  color: #000000;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px solid #000000;
+  border-radius: 15px;
+}
+
+#help-btn {
+  color: #000000;
+  padding: 5px 10px;
+  margin-left: 10px;
+  background-color: #fff;
+  border: 1px solid #000000;
+  border-radius: 15px;
+}
+
+#main-nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#main-nav ul li{
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+}
+
+#main-nav ul li a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  font-family: 'Ubuntu', Arial, sans-serif;
+}
+
+/* ---------- אזור מרכזי ---------- */
+main {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);   /* ממורכז באמצע הדף */
+  width: 500px;
+  max-width: 90%;
+}
+
+main h1 {
+  margin: 0 0 30px;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 400;
+  color: #222;
+}
+
+/* ---------- הטופס ---------- */
+.ask-form {
+  padding: 8px 8px 8px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 22px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.ask-input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 8px 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 12px;
+  color: #222;
+}
+
+.ask-input::placeholder {
+  color: #9a9a9a;
+}
+
+/* ---------- הכפתורים בתוך הטופס ---------- */
+.ask-actions {
+  overflow: hidden;            /* מכיל את הכפתורים הצפים */
+}
+
+.pill {
+  float: left;
+  margin-right: 5px;
+  padding: 5px 9px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 15px;
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 700;
+  color: #444;
+  cursor: pointer;
+}
+
+.pill img {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.pill-voice {
+  float: right;
+  margin-right: 0;
+  background: #ececec;
+  border-color: #ececec;
+}
